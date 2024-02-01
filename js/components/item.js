@@ -59,21 +59,21 @@ export class item {
 
   }
 
-  get element() {
-    return `
-      <div class="group-item">
-        <img class="group-item-img" src="imgs/thumbnails/${this.img}">
+  // get element() {
+  //   return `
+  //     <div class="group-item">
+  //       <img class="group-item-img" src="imgs/thumbnails/${this.img}">
 
-        <h2 class="group-item-name">${this.name}</h2>
-        <p class="group-item-desc">${this.desc}</p>
-        <div class="group-item-price">${currency(this.price)}</div>
-        <h3 class="group-item-total" id="${this.totalDisplay}">${currency(this.total)}</h3>
-        <div class="ctrl-item-total">
-          <button id="${this.btn_subtract}">-</button>
-          <div id="${this.unDisplay}">${this.un}</div>
-          <button id="${this.btn_sum}">+</button>
-        </div>
-      </div>
-    `;
-  }
+  //       <h2 class="group-item-name">${this.name}</h2>
+  //       <p class="group-item-desc">${this.desc}</p>
+  //       <div class="group-item-price">${currency(this.price)}</div>
+  //       <h3 class="group-item-total" id="${this.totalDisplay}">${currency(this.total)}</h3>
+  //       <div class="ctrl-item-total">
+  //         <button id="${this.btn_subtract}">-</button>
+  //         <div id="${this.unDisplay}">${this.un}</div>
+  //         <button id="${this.btn_sum}">+</button>
+  //       </div>
+  //     </div>
+  //   `;
+  // }
 }

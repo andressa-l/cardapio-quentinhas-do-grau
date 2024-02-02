@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Cardápio Quentinhas do Grau" />
     <title>Cardápio - quentinhas do grau</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
 
   <body>
     <section class="menu">
       <div class="menu-container">
         <div class="logo">
-          <img src="../assets/imgs/logo.jpg" alt="quentinhas do grau" />
-          <h1 class="title">Quentinhas do Grau</h1>
+          <img src="/assets/imgs/logo-quentinhas.png" alt="quentinhas do grau" />
+          <!-- <h1 class="title">Quentinhas do Grau</h1> -->
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
           <div class="container list-container">
             <button id="btn-finish">Fazer Pedido</button>
             <div id="list" class="ml-auto">
@@ -34,384 +34,357 @@
             </div>
           </div>
           <div class="group" id="categories"></div>
+        </div> -->
+        <div class="menu-btns">
+          <button type="button" class="menu-btn active-btn" id="active">
+            Almoço
+          </button>
+          <button type="button" class="menu-btn" id="jantar">
+            Jantar
+          </button>
+          <button type="button" class="menu-btn" id="bebidas">Bebidas</button>
+          <button type="button" class="menu-btn" id="sobremesas">
+            Sobremesas
+          </button>
         </div>
         
         <div class="group" id="categories">
-          <!-- item -->
-          <div class="group-category" id="lanches">
-            <h3 class="group-title">Almoço</h3>
-            <div class="group-item">
-              <img class="group-item-img" src="imgs/thumbnails/almo1.png">
+          <!-- Almoço -->
+          <div class="group-category active" id="lanches">
+            <!-- <h3 class="group-title">Almoço</h3> -->
+            <div class="group-item active">
+              <img class="group-item-img" src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/logos/16298014266124cbd260429.png" width="100px" height="200px">
               <h2 class="group-item-name">Tradicional da Casa</h2>
-              <p class="group-item-desc">Arroz, feijão, carne e salada.</p>
-              <div class="group-item-price">R$&nbsp;10,00</div>
-              <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
+              <p class="group-item-desc">Arroz, batata-frita, carne e salada.</p>
+              <div class="group-item-price">R$&nbsp;12,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
               <div class="ctrl-item-total">
-                <button id="subtract0">-</button>
-                <div id="un0">0</div>
-                <button id="sum0">+</button>
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button class="sum" id="sum0">+</button>
               </div>
             </div>
-          </div>
-          <!-- end of item -->
+          
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Macarrão ao molho</h2>
-            <p class="group-item-desc">Macarrão com carne moída</p>
-            <div class="group-item-price">R$&nbsp;18,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
+            <div class="group-item active">
+              <img class="group-item-img" src="https://www.pinasgifts.com/image/cache/data/130/460-500x500.jpg"  alt="" width="100px" height="200px">
+              <h2 class="group-item-name">Carne ao molho</h2>
+              <p class="group-item-desc">Carne ao molho com batatas e cenouras</p>
+              <div class="group-item-price">R$&nbsp;18,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
             </div>
-          </div>
-          <!-- end of item -->
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Especial da Casa</h2>
-            <p class="group-item-desc">Escolha o prato do dia</p>
-            <div class="group-item-price">R$&nbsp;20,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
+            <div class="group-item active">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.Ki1R1-tRl5-FpRhzIe9djQHaF7?rs=1&pid=ImgDetMain"  width="100px" height="200px">
+              <h2 class="group-item-name">Especial da Casa</h2>
+              <p class="group-item-desc">Escolha o prato do dia</p>
+              <div class="group-item-price">R$&nbsp;20,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
             </div>
-          </div>
-          <!-- end of item -->
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Fricassê</h2>
-            <p class="group-item-desc">Fricassê de frango ou Camarão</p>
-            <div class="group-item-price">R$&nbsp;16,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
+            <div class="group-item active">
+              <img class="group-item-img" src="https://folhadomate.com/wp-content/uploads/2021/06/luciano.png" width="100px" height="200px">
+              <h2 class="group-item-name">Fricassê</h2>
+              <p class="group-item-desc">Fricassê de frango ou Camarão</p>
+              <div class="group-item-price">R$&nbsp;16,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
             </div>
-          </div>
-          <!-- end of item -->
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Lasanha</h2>
-            <p class="group-item-desc">Lasanha de frango carne ou frango</p>
-            <div class="group-item-price">R$&nbsp;22,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
+            <div class="group-item active">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.JugJCh-Ku_V2LvOxV7EdMQHaFM?rs=1&pid=ImgDetMain"  width="100px" height="200px">
+              <h2 class="group-item-name">Lasanha</h2>
+              <p class="group-item-desc">Lasanha de frango carne ou frango</p>
+              <div class="group-item-price">R$&nbsp;22,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
             </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Frango Cremoso</h2>
-            <p class="group-item-desc">À moda da casa</p>
-            <div class="group-item-price">R$&nbsp;13,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
+            
+            <div class="group-item active">
+              <img class="group-item-img" src="https://amp.receitadevovo.com.br/wp-content/uploads/2022/02/Receita-de-Frango-cremoso-light.png" width="100px" height="200px">
+              <h2 class="group-item-name">Frango Cremoso</h2>
+              <p class="group-item-desc">À moda da casa</p>
+              <div class="group-item-price">R$&nbsp;13,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
             </div>
           </div>
 
           <!-- Jantar -->
 
           <div class="group-category" id="lanches">
-            <h3 class="group-title">Jantar</h3>
-            <div class="group-item">
-              <img class="group-item-img" src="imgs/thumbnails/almo1.png">
+            <!-- <h3 class="group-title">Jantar</h3> -->
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://imgmedia.wapa.pe/650x368/wapa/migration/imagen/2018/07/30/noticia-calorias-tallarines-rojos-comida-peruana-salud-prevencion.png" width="100px" height="200px">
               <h2 class="group-item-name">Macarronada</h2>
               <p class="group-item-desc">À moda da casa</p>
               <div class="group-item-price">R$&nbsp;18,00</div>
-              <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
+              <h3 class="group-item-total" id="total0"></h3>
               <div class="ctrl-item-total">
-                <button id="subtract0">-</button>
-                <div id="un0">0</div>
-                <button id="sum0">+</button>
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+          
+          
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://th.bing.com/th/id/R.40ee82116421b1ca2ab66868b3e3b7a9?rik=IhHl04lDmG97ig&pid=ImgRaw&r=0" width="100px" height="200px">
+              <h2 class="group-item-name">Yakisoba</h2>
+              <p class="group-item-desc">Yakisoba de Camarão ou misto</p>
+              <div class="group-item-price">R$&nbsp;34,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://vejario.abril.com.br/wp-content/uploads/2017/09/caldo-verde.png?w=567&h=392&crop=1" width="100px" height="200px">
+              <h2 class="group-item-name">Caldo verde</h2>
+              <p class="group-item-desc">Caldo verde, o melhor</p>
+              <div class="group-item-price">R$&nbsp;12,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://sinjali.com/wp-content/uploads/2019/10/Supe.png" width="100px" height="200px">
+              <h2 class="group-item-name">Sopa de legumes</h2>
+              <p class="group-item-desc"> Legumes frescos e saudáveis!</p>
+              <div class="group-item-price">R$&nbsp;16,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://boomi.com.br/wp-content/uploads/2020/09/Sopa-de-Legumes-2-768x768.png" width="100px" height="200px">
+              <h2 class="group-item-name">Caldo de kenga</h2>
+              <p class="group-item-desc">O caldo mais completo do mundo.</p>
+              <div class="group-item-price">R$&nbsp;15,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item jantar">
+              <img class="group-item-img" src="https://th.bing.com/th/id/R.70b21a10bbe560da4cb128b8fb9d074c?rik=6qajskJ%2fyonn5w&pid=ImgRaw&r=0" width="100px" height="200px">
+              <h2 class="group-item-name">Batata recheada</h2>
+              <p class="group-item-desc">Escolha os sabores</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
               </div>
             </div>
           </div>
-          <!-- end of item -->
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Yakisoba</h2>
-            <p class="group-item-desc">Yakisoba de Camarão ou misto</p>
-            <div class="group-item-price">R$&nbsp;34,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Caldo verde</h2>
-            <p class="group-item-desc">Caldo verde, o melhor</p>
-            <div class="group-item-price">R$&nbsp;12,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Sopa de legumes</h2>
-            <p class="group-item-desc"> Legumes frescos e saudáveis!</p>
-            <div class="group-item-price">R$&nbsp;16,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Caldo de kenga</h2>
-            <p class="group-item-desc">O caldo mais completo do mundo.</p>
-            <div class="group-item-price">R$&nbsp;15,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Batata recheada</h2>
-            <p class="group-item-desc">Escolha os sabores</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
+          <!-- Bebidas -->
           <div class="group-category" id="lanches">
-            <h3 class="group-title">Bebidas</h3>
-            <div class="group-item">
-              <img class="group-item-img" src="imgs/thumbnails/almo1.png">
+            <!-- <h3 class="group-title">Bebidas</h3> -->
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.7ghNXa0MrrJunNaH1CbOxwHaFH?rs=1&pid=ImgDetMain" width="100px" height="200px">
               <h2 class="group-item-name">Cervejas</h2>
               <p class="group-item-desc">Escolha</p>
               <div class="group-item-price">R$&nbsp;8,00</div>
-              <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
+              <h3 class="group-item-total" id="total0"></h3>
               <div class="ctrl-item-total">
-                <button id="subtract0">-</button>
-                <div id="un0">0</div>
-                <button id="sum0">+</button>
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+          
+          
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://bertinbebidas.com.br/image/catalog/bling/cachaca-old-cesar-88-965ml0.png" width="100px" height="200px">
+              <h2 class="group-item-name">Cachaça</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;7,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://img.51miz.com/Element/00/52/99/54/cc72b363_E529954_f0e77df8.png" width="100px" height="200px">
+              <h2 class="group-item-name">Coca-cola</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;4,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://tortamaria.com/wp-content/uploads/2022/07/BGuarana.png" width="100px" height="200px">
+              <h2 class="group-item-name">Guaraná</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;5,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.rp-YiGjnH_4tE0bWofYVlwAAAA?w=440&h=440&rs=1&pid=ImgDetMain" width="100px" height="200px">
+              <h2 class="group-item-name">Água</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;5,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item bebidas">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.4UF-runnpU1Q4Irf93EqZQHaHo?w=860&h=887&rs=1&pid=ImgDetMain" width="100px" height="200px">
+              <h2 class="group-item-name">Sucos naturais</h2>
+              <p class="group-item-desc">Escolha o sabor</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
               </div>
             </div>
           </div>
-          <!-- end of item -->
 
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Cachaça</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;7,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Coca-cola</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;4,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Guaraná</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;5,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Água</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;5,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Sucos naturais</h2>
-            <p class="group-item-desc">Escolha o sabor</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
+          <!-- Sobremesas -->
           <div class="group-category" id="lanches">
-            <h3 class="group-title">Sobremesas</h3>
-            <div class="group-item">
-              <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-              <h2 class="group-item-name">Sobremesa gelada de chocolate</h2>
+            <!-- <h3 class="group-title">Sobremesas</h3> -->
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://i0.wp.com/porkworld.com.br/wp-content/uploads/2021/07/receita-de-sobremesa-leite-ninho.png?fit=1200%2C675&ssl=1" width="100px" height="200px">
+              <h2 class="group-item-name">Sobremesa gelada</h2>
               <p class="group-item-desc">Escolha</p>
               <div class="group-item-price">R$&nbsp;10,00</div>
-              <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
+              <h3 class="group-item-total" id="total0"></h3>
               <div class="ctrl-item-total">
-                <button id="subtract0">-</button>
-                <div id="un0">0</div>
-                <button id="sum0">+</button>
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+          
+          
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://i.pinimg.com/originals/1d/18/13/1d1813d59dfdde9f2aaf4f235a00a796.png" width="100px" height="200px">
+              <h2 class="group-item-name">Torta de limão</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://th.bing.com/th/id/R.a9daaa21f356c2859d42eedcb061179f?rik=PbwT0J5%2fkNiSZg&pid=ImgRaw&r=0" width="100px" height="200px">
+              <h2 class="group-item-name">Pudim de leite</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://img.imageboss.me/consul/cdn/animation:true/wp-content/uploads/2021/08/mousse_de_maracuja_suco_de_saquinho-3.png" width="100px" height="200px">
+              <h2 class="group-item-name">Mousse</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+            
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://th.bing.com/th/id/OIP.HGzvecM0vUH8WxjhTkaiswHaHa?rs=1&pid=ImgDetMain" width="100px" height="200px">
+              <h2 class="group-item-name">Cheesecake</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
+              </div>
+            </div>
+          
+            <div class="group-item sobremesas">
+              <img class="group-item-img" src="https://receitasnotadez.com.br/wp-content/uploads/2020/05/torta-de-maca-740x463-1.png" width="100px" height="200px">
+              <h2 class="group-item-name">Torta de maçã</h2>
+              <p class="group-item-desc">Escolha</p>
+              <div class="group-item-price">R$&nbsp;10,00</div>
+              <h3 class="group-item-total" id="total0"></h3>
+              <div class="ctrl-item-total">
+                <button class="subtract" id="subtract0">-</button>
+                <div class="un" id="un0">0</div>
+                <button  class="sum" id="sum0">+</button>
               </div>
             </div>
           </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Torta de limão</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Pudim de leite</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Mousse de maracujá</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Cheesecake de morango</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
-
-          <!-- item -->
-          <div class="group-item">
-            <img class="group-item-img" src="imgs/thumbnails/almo1.png">
-            <h2 class="group-item-name">Torta de banana</h2>
-            <p class="group-item-desc">Escolha</p>
-            <div class="group-item-price">R$&nbsp;10,00</div>
-            <h3 class="group-item-total" id="total0">R$&nbsp;0,00</h3>
-            <div class="ctrl-item-total">
-              <button id="subtract0">-</button>
-              <div id="un0">0</div>
-              <button id="sum0">+</button>
-            </div>
-          </div>
-          <!-- end of item -->
         </div>
       </div>
     </section>
     <script type="module" src="js/def.js"></script>
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
